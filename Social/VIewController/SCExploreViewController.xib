@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCExploreViewController">
+            <connections>
+                <outlet property="mapView" destination="8ho-GE-nrb" id="Nnc-aA-JzW"/>
+                <outlet property="reloadButton" destination="VmN-Tb-TvM" id="XbI-fZ-sKZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-GE-nrb">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmN-Tb-TvM">
+                    <rect key="frame" x="87" y="537" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="M9u-t1-e1d"/>
+                        <constraint firstAttribute="width" constant="200" id="TKy-q0-syW"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="VmN-Tb-TvM" secondAttribute="bottom" constant="100" id="YdJ-ML-Cz7"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="8ho-GE-nrb" secondAttribute="bottom" id="ccS-qo-cDF"/>
+                <constraint firstItem="VmN-Tb-TvM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d2H-I9-NEJ"/>
+                <constraint firstItem="8ho-GE-nrb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="dBl-gT-RdM"/>
+                <constraint firstItem="8ho-GE-nrb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="eId-lq-npg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8ho-GE-nrb" secondAttribute="trailing" id="lXV-t1-pgm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="8.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
